@@ -2,7 +2,68 @@ Initialize Git Repository
 git init
 
 U - Untracked
+A - Addition Of A file
+M - Modification/Modified
 
 Configuring Git
 git config --global user.name "Username"
 git config --global user.email "email"
+
+Adding file to the staging area
+git add .
+
+Create a commit
+git commit -m "This is the description."
+
+Check the status
+git status
+
+Show the history
+git log
+
+git branch feature
+git branch -a
+git checkout feature
+git checkout master
+
+
+Branching
+
+List all branches
+git branch -a
+
+Create a branch
+git branch [branch-name]
+
+Switch to a different branch
+git checkout [branch-name]
+
+Merging
+
+Merging feature branch into the master
+git merge [branch-name]
+
+Delete a branch
+git branch -d [branch-name]
+Merging
+
+Merging feature branch into the master
+git merge [branch-name]
+
+Delete a branch
+git branch -d [branch-name]
+
+master to main
+git branch -M main
+
+Add a remote to the local repository
+git remote add origin [repository-url]
+
+Set the branch to main
+git branch -M main
+
+Push commits to the remote repository for the first time
+git push -u origin main
+
+Push commits to the remote repository
+git push
